@@ -1,0 +1,14 @@
+[
+  { "ID": 12, "Name": "obstacles" },
+  { "ID": 1,  "Name": "biker" },
+  { "ID": 2,  "Name": "car" },
+  { "ID": 3,  "Name": "pedestrian" },
+  { "ID": 4,  "Name": "trafficLight" },
+  { "ID": 5,  "Name": "trafficLight-Green" },
+  { "ID": 6,  "Name": "trafficLight-GreenLeft" },
+  { "ID": 7,  "Name": "trafficLight-Red" },
+  { "ID": 8,  "Name": "trafficLight-RedLeft" },
+  { "ID": 9,  "Name": "trafficLight-Yellow" },
+  { "ID": 10, "Name": "trafficLight-YellowLeft" },
+  { "ID": 11, "Name": "truck" }
+]
