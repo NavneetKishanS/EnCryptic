@@ -1,0 +1,6 @@
+
+import "./globals.css";
+export const metadata = { title:"EnCryptic Demo", description:"Vision → Entropy pipeline demo"};
+export default function RootLayout({children}:{children:React.ReactNode}) {
+  return (<html lang="en"><body>{children}</body></html>);
+}
