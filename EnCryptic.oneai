@@ -1,0 +1,252 @@
+{
+  "type": "Object Detection",
+  "guid": "d3517ee9-2861-47d5-8944-7cce3e1e8a8a",
+  "data": {
+    "selectedAutoLabelModels": [],
+    "selectedRunModel": "",
+    "annotationMode": 1,
+    "fusionType": "Single Image",
+    "validationSettings": {
+      "useValidationSplit": true,
+      "validationSplit": 20
+    },
+    "testSettings": {
+      "testImagePercentage": 0,
+      "validationImagePercentage": 100,
+      "validationImageSplitPercentage": 0
+    },
+    "labels": [
+      {
+        "name": "obstacles",
+        "id": 12,
+        "groupId": 1,
+        "color": 4293418067,
+        "excludeFromTraining": false
+      },
+      {
+        "name": "biker",
+        "id": 1,
+        "groupId": 1,
+        "color": 4291562200,
+        "excludeFromTraining": false
+      },
+      {
+        "name": "car",
+        "id": 2,
+        "groupId": 1,
+        "color": 4291082401,
+        "excludeFromTraining": false
+      },
+      {
+        "name": "pedestrian",
+        "id": 3,
+        "groupId": 1,
+        "color": 4280371874,
+        "excludeFromTraining": false
+      },
+      {
+        "name": "trafficLight",
+        "id": 4,
+        "groupId": 1,
+        "color": 4289585495,
+        "excludeFromTraining": false
+      },
+      {
+        "name": "trafficLight-Green",
+        "id": 5,
+        "groupId": 1,
+        "color": 4293777685,
+        "excludeFromTraining": false
+      },
+      {
+        "name": "trafficLight-GreenLeft",
+        "id": 6,
+        "groupId": 1,
+        "color": 4288449672,
+        "excludeFromTraining": false
+      },
+      {
+        "name": "trafficLight-Red",
+        "id": 7,
+        "groupId": 1,
+        "color": 4291649946,
+        "excludeFromTraining": false
+      },
+      {
+        "name": "trafficLight-RedLeft",
+        "id": 8,
+        "groupId": 1,
+        "color": 4284430927,
+        "excludeFromTraining": false
+      },
+      {
+        "name": "trafficLight-Yellow",
+        "id": 9,
+        "groupId": 1,
+        "color": 4285945878,
+        "excludeFromTraining": false
+      },
+      {
+        "name": "trafficLight-YellowLeft",
+        "id": 10,
+        "groupId": 1,
+        "color": 4285126273,
+        "excludeFromTraining": false
+      },
+      {
+        "name": "truck",
+        "id": 11,
+        "groupId": 1,
+        "color": 4288072502,
+        "excludeFromTraining": false
+      }
+    ],
+    "groups": [
+      {
+        "name": "Group 1",
+        "id": 1
+      }
+    ],
+    "preFiltersBegin": [
+      {
+        "id": "initialResize",
+        "isEnabled": true,
+        "settings": {
+          "resizeStrategy": "Resize",
+          "width": 640,
+          "height": 640
+        }
+      },
+      {
+        "id": "resize",
+        "isEnabled": true,
+        "settings": {
+          "resizePercentage": 100
+        }
+      }
+    ],
+    "preFiltersBeforeAugmentation": [
+      {
+        "id": "normalize",
+        "isEnabled": true,
+        "settings": {
+          "enableNormalize": false
+        }
+      }
+    ],
+    "preFiltersAfterAugmentation": [],
+    "preFiltersEnd": [
+      {
+        "id": "channel",
+        "isEnabled": true,
+        "settings": {
+          "disableRChannel": false,
+          "disableGChannel": false,
+          "disableBChannel": false
+        }
+      }
+    ],
+    "augmentationsStatic": [
+      {
+        "id": "move",
+        "isEnabled": true,
+        "settings": {
+          "fromX": 0,
+          "fromY": 0,
+          "toX": 0,
+          "toY": 0
+        }
+      },
+      {
+        "id": "rotate",
+        "isEnabled": true,
+        "settings": {
+          "fromAngle": 10,
+          "toAngle": -10
+        }
+      },
+      {
+        "id": "flip",
+        "isEnabled": true,
+        "settings": {
+          "horizontal": true,
+          "vertical": false
+        }
+      },
+      {
+        "id": "resize",
+        "isEnabled": true,
+        "settings": {
+          "fromX": 100,
+          "fromY": 100,
+          "toX": 100,
+          "toY": 100
+        }
+      }
+    ],
+    "augmentationsDynamic": [
+      {
+        "id": "color",
+        "isEnabled": true,
+        "settings": {
+          "fromBrightness": -20,
+          "fromContrast": 80,
+          "fromSaturation": 100,
+          "fromHue": 0,
+          "fromGamma": 90,
+          "toBrightness": 20,
+          "toContrast": 120,
+          "toSaturation": 100,
+          "toHue": 0,
+          "toGamma": 110
+        }
+      }
+    ],
+    "modelOutputSettings": {
+      "classificationType": "All Individual Classes",
+      "predictionType": "Size, Position and Class of Objects",
+      "coordinatePrecision": 50,
+      "allowPositionOverlap": false,
+      "sizePrecision": 50,
+      "prioritizePrecision": 60,
+      "minimumFps": 25,
+      "maximumMemoryUsage": 25,
+      "maximumDspUsage": 25,
+      "maximumFrequency": 50
+    },
+    "modelInputSettings": {
+      "estimatedSurroundingMinWidth": 25,
+      "estimatedSurroundingMinHeight": 25,
+      "estimatedSurroundingMaxWidth": 85,
+      "estimatedSurroundingMaxHeight": 85,
+      "detectSimplicity": 50,
+      "sameClassDifference": 50,
+      "backgroundDifference": 50,
+      "estimatedMinWidth": 10,
+      "estimatedMinHeight": 10,
+      "estimatedAvgWidth": 50,
+      "estimatedAvgHeight": 50,
+      "estimatedMaxWidth": 90,
+      "estimatedMaxHeight": 90,
+      "maxFeatures": 10,
+      "avgFeatures": 2
+    },
+    "hardwareSettings": {
+      "advancedSettings": true,
+      "configurationName": "Custom",
+      "hardwareType": "GPU",
+      "prioritizeSpeedOptimization": false,
+      "computeCapability": 4,
+      "computeCapabilityUnit": "TOPS",
+      "dspBlocks": 0,
+      "dspGroups": 1,
+      "prioritizeMemoryOptimization": false,
+      "memoryLimit": 6,
+      "memoryLimitUnit": "GB",
+      "optimizeForParallelExecution": true,
+      "quantizedCalculations": false,
+      "bitsPerValue": 16,
+      "installedHardware": "Custom"
+    }
+  }
+}
